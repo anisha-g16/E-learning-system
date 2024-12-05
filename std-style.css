@@ -1,0 +1,238 @@
+/* sd-style.css */
+
+/* Global Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa; /* Light neutral background */
+    color: #333333; /* Dark gray for text */
+    line-height: 1.6;
+}
+
+/* Main dashboard container */
+.dashboard-container {
+    width: 90%;
+    margin: 30px auto;
+    background-color: #ffffff; /* White background for main container */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Light shadow */
+    padding: 25px;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #2a3d66; /* Deep blue-gray */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.navbar .nav-brand {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #e0e0e0; /* Light gray */
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #1b2c4e; /* Darker shade */
+}
+
+/* Main content */
+.main-content h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+    color: #2a3d66; /* Deep blue-gray */
+}
+
+.courses-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.course-item {
+    background-color: #fdfdfd; /* Off-white */
+    border: 1px solid #d1d9e6; /* Light blue-gray border */
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333333; /* Dark gray */
+}
+
+.course-item p {
+    font-size: 14px;
+    color: #555555; /* Medium gray */
+    margin-bottom: 12px;
+}
+
+.course-item strong {
+    font-weight: 600;
+    color: #333333; /* Dark gray */
+}
+
+.course-item .button {
+    display: inline-block;
+    background-color: #2a3d66; /* Deep blue-gray */
+    color: #ffffff;
+    padding: 8px 14px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.course-item .button:hover {
+    background-color: #1b2c4e; /* Darker shade */
+}
+
+/* Course item hover effect */
+.course-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+
+
+
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2, h3, h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Lesson Section */
+.lessons-container {
+    margin-top: 20px;
+    border-top: 2px solid #eaeaea;
+    padding-top: 20px;
+}
+
+.lesson {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+}
+
+.lesson h4 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.lesson p {
+    margin: 5px 0;
+}
+
+/* Video Container for Embedded YouTube Videos */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .video-container {
+        padding-bottom: 75%; /* Adjust aspect ratio for mobile if needed */
+    }
+}
